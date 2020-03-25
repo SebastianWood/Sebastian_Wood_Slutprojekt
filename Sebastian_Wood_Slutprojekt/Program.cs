@@ -38,7 +38,7 @@ namespace Sebastian_Wood_Slutprojekt
 
 
 
-            Console.WriteLine(fighter.GetRoom()); //får fixa de här senare...
+            Console.WriteLine(fighter.GetRoom()); //får fixa de här senare. 
 
 
             Console.WriteLine("Hi I'm !");
