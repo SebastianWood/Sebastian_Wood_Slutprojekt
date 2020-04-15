@@ -8,15 +8,34 @@ namespace Sebastian_Wood_Slutprojekt
 {
     class Classroom1 : Rooms //subklass som ärver från Rooms
     {
-        //använder sig utav arv då Classroom1 ärver ifrån rooms vilket innebär att alla instanster från rooms kan också användas i Classroom1
-        
+        //konsturktorer https://sites.google.com/view/csharp-referens/klasser-och-objektorientering/konstruktorer?authuser=0
 
-        public void PrintName()
+        //använder sig utav arv då Classroom1 ärver ifrån rooms vilket innebär att alla instanster från rooms kan också användas i Classroom1
+
+
+        public string GetroomName()
         {
-            Console.WriteLine(GetRoom());
+
+            return roomName + "Classroom"; //kan använda roomName trots att variabeln är skapad i Rooms. 
+
 
         }
-        
+
+        public Classroom1()
+        {
+            
+
+            temperatur = 20;
+
+
+        }
+
+        public int WindSpeed()
+        {
+
+            return wind = 3;
+
+        }
 
 
 

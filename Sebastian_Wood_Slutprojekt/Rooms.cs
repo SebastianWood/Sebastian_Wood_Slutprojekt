@@ -11,13 +11,37 @@ namespace Sebastian_Wood_Slutprojekt
 
 
 
-        private string roomName = ""; //private string som används inom metoden GetLand och sedan hämtas till Fighter. 
+        protected string roomName = ""; //protected string som används inom Classroom1 och kan sedan användas genom en klass i program.
 
-
-
-        public string GetRoom()
+        public string GetroomName () //en metod som används i Classroom1 och som kan användas i program.
         {
-            return roomName;
+
+            return roomName; //returnerar den protectade stringen roomName ovan
+
+
+        }
+
+
+        public int temperatur; //en public int temperatur.
+
+       
+
+        public Rooms() 
+        {
+            
+            temperatur = 5; //definerar vilken temperatur int värdet ska ha. 
+
+            
+
+        }
+
+        protected int wind;
+        public int WindSpeed()
+        {
+
+
+            return wind;
+
 
         }
 
