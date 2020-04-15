@@ -99,10 +99,10 @@ namespace Sebastian_Wood_Slutprojekt
                         Console.WriteLine("You picked up your cat! ");
                         Console.WriteLine("However, where are you right now? It looks like we are in...");
                        
-                        Classroom1 Classroom = new Classroom1(); //skapar en klass som heter Classroom som är utifrån Classroom1 vilket också ärver utifrån Rooms. 
+                        Classroom1 classroom = new Classroom1(); //skapar en klass som heter Classroom som är utifrån Classroom1 vilket också ärver utifrån Rooms. 
 
-                        string classroomName = Classroom.GetroomName(); //skapar utifrån Classroom1 där man ärver utifrån public string GetroomName()
-
+                        string classroomName = classroom.GetroomName(); //skapar utifrån Classroom1 där man ärver utifrån public string GetroomName()
+                        //set fixas.
                         Console.WriteLine(classroomName); //skriver ut vad klassen Classroom1 heter vilket i detta fall är 'return roomName + "Classroom";'
 
                         Console.ReadLine();
@@ -127,15 +127,15 @@ namespace Sebastian_Wood_Slutprojekt
 
                         }
 
-                    Console.WriteLine("You are in " + classroomName + "! The temperatur is " + Classroom.temperatur + "..."); //skriver ut classroomName och även ut temperaturen utifrån Classroom som är ifrån Classroom1.
+                    Console.WriteLine("You are in " + classroomName + "! The temperatur is " + classroom.temperatur + "..."); //skriver ut classroomName och även ut temperaturen utifrån Classroom som är ifrån Classroom1.
 
-                        int wind = Classroom.WindSpeed();
+                        int wind = classroom.WindSpeed(); //ändra till litet c.
 
                         Console.WriteLine("Wind speed is " + wind + "!");
 
                         Console.WriteLine("Where do you wanna go now? To the'exit' or 'stay'?");
 
-                       input = Console.ReadLine();
+                       input = Console.ReadLine(); //här får användaren skriva in vart den vill gå. 
 
 
                         if (input == "exit")
@@ -144,7 +144,7 @@ namespace Sebastian_Wood_Slutprojekt
 
                                 Console.ReadLine();
 
-                            room = "exit";
+                            room = "exit"; //skickar till input där room == "exit". 
 
                         }
 
