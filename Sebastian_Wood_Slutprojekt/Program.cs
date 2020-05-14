@@ -168,6 +168,36 @@ namespace Sebastian_Wood_Slutprojekt
 
                             Console.ReadLine();
 
+
+                            Console.WriteLine("Now we will randomly generate a number! Yay!");
+
+
+                            Rooms rooms = new Rooms(); //skapar utifrån klassen Rooms som heter rooms 
+
+
+                            int randomNumber = rooms.GetSlump(); //tar från metoden GetSlump i Rooms som då körs. 
+                            Console.WriteLine("Lets add a number with " + randomNumber+ "!");
+
+                            string convert = Console.ReadLine(); //string som heter convert
+                            int resultat; //int som fixar resultat
+                            bool lyckad = int.TryParse(convert, out resultat); //Tryparse som kollar ifall bool är lyckad och konverterar convert till en int som heter resultat
+
+                            int userNumber = randomNumber+=resultat; //fixar ihop randomNumber + resultat
+
+
+                            if (lyckad == false) //körs ifall bool på Tryparse misslyckas vilket den gör ifall string som skrivs in är inte ett nummer exempelvis. 
+                            {
+                                Console.WriteLine("Looks like something happened. Well does not matter anyways!");
+
+                            }
+
+                            Console.WriteLine("You got " + userNumber + "!");
+
+                            Console.ReadLine();
+
+
+
+
                             Console.WriteLine("Looks like there is no road left but the one that leads to the exit...");
                             Console.ReadLine();
 
