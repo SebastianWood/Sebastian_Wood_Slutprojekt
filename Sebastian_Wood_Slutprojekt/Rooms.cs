@@ -90,23 +90,9 @@ namespace Sebastian_Wood_Slutprojekt
             }
 
 
-            return randomNumber;
+            return randomNumber; //returnar randomNumber så att den kan användas inom Main och ge ett value. 
 
         }
-
-
-        /*
-       private string  = "randomNumbr";
-       public string GetName()
-       {
-           return name;
-       }
-
-
-       string tal = "42";
-       int resultat;
-       bool lyckad = int.TryParse(tal, out resultat);
-       */
 
     }
 }
